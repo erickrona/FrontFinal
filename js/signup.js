@@ -14,6 +14,7 @@ $('#signup_button').on('click', function(){
   };
 
   json_to_send = JSON.stringify(json_to_send);
+  console.log(json_to_send)
 
   $.ajax({
     //url: 'http://localhost:3000/users',
