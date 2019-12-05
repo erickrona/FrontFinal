@@ -9,7 +9,7 @@ var todos = document.querySelectorAll("input[type=checkbox]");
 function loadTodos() {
   $.ajax({
     //url: 'http://localhost:3000/todos',
-    url: 'https://sol-ex-finalweb.herokuapp.com',
+    url: 'https://exfin.herokuapp.com/todos',
     headers: {
         'Content-Type':'application/json',
         'Authorization': 'Bearer ' + token
