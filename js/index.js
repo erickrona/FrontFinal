@@ -12,7 +12,7 @@ $('#login_button').on('click', function(){
   console.log(json_to_send)
   $.ajax({
     //url: 'http://localhost:3000/login',
-    url: 'https://finalexamweb.herokuapp.com',
+    url: 'https://exfin.herokuapp.com/todos',
     headers: {
         'Content-Type':'application/json'
     },

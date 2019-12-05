@@ -18,7 +18,7 @@ $('#signup_button').on('click', function(){
 
   $.ajax({
     //url: 'http://localhost:3000/users',
-    url: 'https://finalexamweb.herokuapp.com',
+    url: 'https://exfin.herokuapp.com/todos',
     headers: {
         'Content-Type':'application/json'
     },

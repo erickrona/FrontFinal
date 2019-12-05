@@ -9,7 +9,7 @@ var todos = document.querySelectorAll("input[type=checkbox]");
 function loadTodos() {
   $.ajax({
     //url: 'http://localhost:3000/todos',
-    url: 'https://finalexamweb.herokuapp.com',
+    url: 'https://exfin.herokuapp.com/todos',
     headers: {
         'Content-Type':'application/json',
         'Authorization': 'Bearer ' + token
@@ -33,7 +33,6 @@ function loadTodos() {
           newElement.classList.add("done");
         }
         $("#todo-list").append(newElement);
-        
       }
     },
     error: function(error_msg) {
@@ -63,7 +62,7 @@ input.addEventListener('keypress', function (event) {
     json_to_send = JSON.stringify(json_to_send);
     $.ajax({
       //url: 'http://localhost:3000/todos',
-      url: 'https://finalexamweb.herokuapp.com',
+      url: 'https://exfin.herokuapp.com/todos',
       headers: {
           'Content-Type':'application/json',
           'Authorization': 'Bearer ' + token
