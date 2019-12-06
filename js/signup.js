@@ -18,7 +18,7 @@ $('#signup_button').on('click', function(){
 
   $.ajax({
     //url: 'http://localhost:3000/users',
-    url: 'https://sol-ex-finalweb.herokuapp.com',
+    url: 'https://finalexamweb.herokuapp.com/users',
     headers: {
         'Content-Type':'application/json'
     },
