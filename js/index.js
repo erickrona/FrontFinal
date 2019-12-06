@@ -12,7 +12,7 @@ $('#login_button').on('click', function(){
   console.log(json_to_send)
   $.ajax({
     //url: 'http://localhost:3000/login',
-    url: 'https://sol-ex-finalweb.herokuapp.com',
+    url: 'https://finalexamweb.herokuapp.com/login',
     headers: {
         'Content-Type':'application/json'
     },
